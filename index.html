@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Midnight Broadcast</title>
+    <style>
+        /*
+          Color Palette:
+          Deep Charcoal: #1A1A1D
+          Soft Cream: #F7F4EA
+          Muted Red: #A94047
+        */
+
+        :root {
+            --bg-color: #1A1A1D; /* Deep Charcoal */
+            --text-color: #F7F4EA; /* Soft Cream */
+            --accent-color: #A94047; /* Muted Red */
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: rgba(0, 0, 0, 0.2);
+            padding: 2rem 0;
+            text-align: center;
+            border-bottom: 2px solid var(--accent-color);
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 3rem;
+            letter-spacing: 2px;
+        }
+
+        .subtitle {
+            color: var(--accent-color);
+            font-style: italic;
+            margin-top: 0.5rem;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .episode-card {
+            background-color: rgba(255, 255, 255, 0.05);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            border-left: 4px solid var(--accent-color);
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .episode-card:hover {
+            transform: translateY(-5px);
+            background-color: rgba(255, 255, 255, 0.08);
+        }
+
+        .episode-title {
+            margin-top: 0;
+            color: var(--text-color);
+        }
+
+        .listen-btn {
+            display: inline-block;
+            background-color: var(--accent-color);
+            color: var(--text-color);
+            text-decoration: none;
+            padding: 0.5rem 1.5rem;
+            border-radius: 4px;
+            font-weight: bold;
+            margin-top: 1rem;
+            transition: background-color 0.2s;
+        }
+
+        .listen-btn:hover {
+            background-color: #8c353b; /* Darker muted red */
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            margin-top: 2rem;
+            border-top: 1px solid rgba(247, 244, 234, 0.1);
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>The Midnight Broadcast</h1>
+        <div class="subtitle">Late night talks, early morning thoughts.</div>
+    </header>
+
+    <main>
+        <h2>Latest Episodes</h2>
+
+        <div class="episode-card">
+            <h3 class="episode-title">Episode 42: The Silence of the Stars</h3>
+            <p>In this episode, we explore the vast emptiness of space and what it means for our understanding of isolation and connection.</p>
+            <a href="#" class="listen-btn">Listen Now</a>
+        </div>
+
+        <div class="episode-card">
+            <h3 class="episode-title">Episode 41: Echoes in the Dark</h3>
+            <p>A deep dive into the psychology of sound, memory, and why certain noises keep us awake at night.</p>
+            <a href="#" class="listen-btn">Listen Now</a>
+        </div>
+
+        <div class="episode-card">
+            <h3 class="episode-title">Episode 40: Shadows of the Past</h3>
+            <p>We discuss how historical events shape our present anxieties and the lingering effects of forgotten eras.</p>
+            <a href="#" class="listen-btn">Listen Now</a>
+        </div>
+    </main>
+
+    <footer>
+        &copy; 2023 The Midnight Broadcast. All rights reserved.
+    </footer>
+
+</body>
+</html>
